@@ -1,0 +1,9 @@
+# Write a Python program to write a list to a file. 
+
+car = ['WR', 'Tiber', 'Tiago', 'BMW', 'Range Rover']
+with open('11)file.txt', "w") as myfile:
+        for c in car:
+                myfile.write("%s\n" % c)
+
+content = open('file.txt')
+print(content.read())
