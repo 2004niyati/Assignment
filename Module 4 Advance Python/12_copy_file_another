@@ -1,0 +1,19 @@
+# Write a Python program to copy the contents of a file to another file. 
+
+# Open the source file in read mode
+f1 = open("file.txt", mode='r', encoding='utf-8')
+
+# Open the destination file in write mode
+f2 = open("2)my file.txt", mode='w', encoding='utf-8')
+
+# Read all lines from the source file
+data = f1.readlines()
+print(data)  # This will print the lines read from the source file
+
+# Write each line to the destination file
+for line in data:
+    f2.write(line)
+
+# Close both files
+f1.close()
+f2.close()
